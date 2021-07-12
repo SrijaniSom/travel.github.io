@@ -1,0 +1,1815 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+html
+{
+    /*background-color:  #011B37;*/
+    background-color: #181919;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+  
+    
+}
+
+.NavBar
+{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+    padding-bottom: 1rem;
+    min-width: 700px;
+
+}
+.icon
+{
+    color: #E7610A;
+    padding-left:1.5rem;
+    font-size: 20px;
+
+}
+.SearchBar
+{
+    padding-left:5%;
+
+
+}
+.search
+{
+    padding: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 16px;
+    background-color: #EEE2DB;
+    color:#E7610A;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    border:transparent;
+}
+.itemList
+{
+    display: flex;
+    padding-left:5%;
+
+}
+.item
+{
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color:#F9212E;
+    padding-right: 0.2rem;
+    margin-right: 0.85rem;
+}
+.item:hover
+{
+    cursor: pointer;
+    color: #E7F836;
+}
+.Login
+{
+    background-color:#F9212E;
+    color:white;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding:0.2rem;
+    padding-left:0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 8px;
+    border:transparent;
+    margin-left:3%;
+
+}
+.Login:hover
+{
+    cursor: pointer;
+    color:#F9212E;
+    background-color: white;
+    border:#F9212E solid 3px;
+}
+.coverPart
+{
+    background: url("940b3fe1c6780f2bebaa4ad0a703df6c.jpg");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:40rem;
+    color:#F9212E;
+    min-width: 700px;
+}
+.heading
+{
+    font-family: 'Balsamiq Sans', cursive;
+    color:white;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+.intro
+{
+    font-family: 'Poppins', sans-serif;
+    padding-top:0.85rem;
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.LinkList
+{
+    display: flex;
+    margin-top:15rem;
+
+}
+.Link
+{
+    display: flex;
+
+}
+.LinkIcon
+{
+    font-size: 28px;
+    font-weight: bolder;
+    color:white;
+    padding:0.5rem;
+}
+.explain
+{
+    color:white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+    padding:0.85rem;
+
+}
+.Link:hover,.explain:hover
+{
+
+    color:#E7F836;
+    cursor: pointer;
+
+}
+.ToggleIcon
+{
+    color:#F9212E;
+    font-size: 30px;
+    position: absolute;
+    right: 1rem;
+}
+.AboutSec
+{
+    width: 200vw;
+}
+
+@media(max-width:900px)
+{
+    .tourImage
+    {
+        width:90%;
+    }
+    .Maining
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .Lefting
+    {
+        width:100%;
+
+    }
+    .Righting
+    {
+        width:100%;
+    }
+    .itemList
+    {
+       display: none; 
+    }
+    .ToggleIcon
+    {
+        display: flex;
+    }
+    .itemList
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item,.itemList
+    {
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+        transition:0.5s;
+    }
+    .show-links,.item
+    {
+        height: 14rem;
+    }
+    .NavBar
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .Login
+    {
+        width: fit-content;
+    }
+    .itemList
+    {
+        margin-top: 1rem;
+    }
+    .AboutSec
+    {
+        height: 70rem;
+    }
+   .Wondersec
+   {
+       display:flex;
+       flex-direction: column;
+   }
+   .col1,.col2
+   {
+       width: 50%;
+       padding:0.5rem;
+
+   }
+   .image1,.image2,.image3,.image4
+   {
+       width:100%;
+       margin:1rem;
+   }
+   .image1,.image4
+    {
+        height:25rem;
+        
+    }
+    .image2,.image3
+    {
+        height:20rem;
+    }
+    .pic1,.pic2,.pic3,.pic4
+    {
+        width:100%;
+        height: 100%;
+    }
+    .ImageSec
+    {
+        display: flex;
+    }
+    .headingStory
+    {
+        padding:1rem;
+    }
+    .StoryTab
+    {
+        padding:4rem;
+    }
+    .AboutSec
+    {
+        width:100vw;
+    }
+    
+    .Places
+    {
+        width:100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 4rem;
+        
+    }
+    .singleCard
+    {
+        width:100%;
+        height:100%;
+        padding:1rem
+    }
+    .pic
+    {
+        width: 100%;
+        height: 15rem;
+    }
+    .SecondSection
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .RightPanel
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        width:100%;
+
+    }
+    .SingleItem
+    {
+        margin:2rem;
+        width:90%;
+        margin-left: 5%;
+        height:18rem;
+    }
+    .ImageHolder,.PicHolder
+    {
+        width:100%;
+        height:100%;
+
+    }
+    .MainPanel
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .LeftHeadPrior
+    {
+        margin-top: 0.25rem;
+        color:#F9212E;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding: 3rem;
+  
+    }
+    .description
+    {
+        margin-top: 2rem;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: bolder;
+      letter-spacing: 4px;
+     padding:4rem;
+      margin-top: 1rem;
+      padding-top: 0rem;
+     
+    }
+    .subButton
+    {
+        margin-top: 1rem;
+        background-color: #F9212E;
+        color:#130024;
+        padding:4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        margin-left: 4rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 3px;
+          border:#130024 3px solid;
+    }
+    .Righting
+    {
+        margin:2rem;
+    }
+}
+@media(min-width:900px)
+{
+    .Maining
+    {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .LeftHeadPrior
+    {
+        margin-top: 0.25rem;
+        color:#F9212E;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding: 3rem;
+  
+    }
+    .description
+    {
+        margin-top: 2rem;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: bolder;
+      letter-spacing: 4px;
+     padding:4rem;
+      margin-top: 1rem;
+      padding-top: 0rem;
+     
+    }
+    .Lefting
+    {
+        width:70%;
+        text-align: justify;
+  
+    }
+    .subButton
+    {
+        margin-top: 1rem;
+        background-color: #833035;
+        color:#130024;
+        padding:4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        margin-left: 4rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 3px;
+          border:#00303C 3px solid;
+    }
+    .Righting
+    {
+        width:30%;
+       text-align: justify;
+     
+    }
+    .TourPic
+    {
+        width:80%;
+        margin-left: 10%;
+        
+        height: 100%;
+    }
+    .tourImage
+    {
+        width: 100%;
+        height:100%;
+    }
+    .Maining
+    {
+        height: max-content;
+    }
+    .CopyRightSec
+    {
+        margin-top: 10rem;
+    }
+
+    .MainPanel
+{
+    width:100%;
+}
+.RightPanel
+{
+    margin:2rem;
+    display:grid;
+    grid-template-columns:30% 30% 30% ;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.SingleItem
+{
+    width:100%;
+    height:20rem;
+}
+.ImageHolder
+{
+    width:100%;
+    height:100%;
+}
+.PicHolder
+{
+    width:100%;
+    height:100%;
+}
+
+    .ToggleIcon
+    {
+        display: none;
+    }
+    .itemList
+    {
+        display: flex;
+      
+    }
+
+    .itemList
+    {
+        margin-left:20%;
+    }
+    .AboutSec
+    {
+        height:50rem;
+    }
+    .Wondersec
+    {
+        display:flex;
+        margin-top: 2rem;
+        margin:1rem;
+    
+    }
+    .ImageSec
+    {
+        width:500%;
+    
+        display: flex;
+    }
+    .col1,.col2
+    {
+        width:40%;
+    }
+    .image1,.image2,.image3,.image4
+    {
+        width: 100%;
+        padding:1rem;
+    }
+    .image1,.image4
+    {
+        height:25rem;
+    
+    }
+    .image2,.image3
+    {
+        height:20rem;
+    }
+    .pic1,.pic2,.pic3,.pic4
+    {
+        width:100%;
+        height: 100%;
+    }
+    .StoryTab
+    {
+        margin-top: 6rem;
+
+    }
+
+    .Places
+{
+    width:100%;
+    height: 22rem;
+    display: flex;
+    margin-top: 4rem;
+}
+.singleCard
+{
+    width:25%;
+    height:100%;
+    padding:1rem
+}
+.pic
+{
+    width: 100%;
+    height: 100%;
+}
+ .SecondSection
+ {
+     display: flex;
+
+ }
+    
+
+}
+.ToggleIcon:hover
+{
+    color:#E7F836;
+    cursor: pointer;
+}
+.first
+{
+    display: flex;
+}
+.Login
+{
+    margin-left: 6%;
+}
+.AboutSec
+{
+    display: none;
+}
+.AboutSec
+{
+    background: url("boatbcg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    
+    padding:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headingAbout1
+{
+    font-size: 50px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 2rem;
+    
+    
+}
+.AboutSec
+{
+    width:100%;
+}
+
+.headingAbout2
+{
+    font-size: 50px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 0.85rem;
+    
+    
+}
+
+.AboutContent
+{
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    margin-top:1rem;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    padding:4rem;
+}
+
+.Divider
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height:2px;
+    background-color: #bfbd31;
+    width:100%;
+}
+.AboutSec
+{
+    display: none;
+}
+.FeaturedHeading
+{
+    font-size: 40px;
+    margin-bottom: 4rem;
+    color:white;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #DEE3E5 0.12rem 0.12rem 0.12rem;
+
+}
+.ReasonList
+{
+    display: flex;
+    margin-top:2rem;
+    justify-content: center;
+    color:#bfbd31;
+    margin-left:3rem;
+    margin-right: 3rem;
+    padding-bottom: 3rem;
+}
+.iconReason
+{
+    background-color: #707531;
+    color: #E7F836;
+    font-size: 35px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border:transparent;
+    text-align: center;
+    padding-top:5px;
+   
+}
+.ReasonEach
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem;
+}
+.headingReason
+{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #bfbd31;
+    margin-top:1rem;
+    
+
+}
+.textReason
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color:#E7F836;
+    margin-top: 2rem;
+
+}
+.Divider2
+{
+    margin-top: 0.1  5rem;
+    height:1px;
+    width:40%;
+    margin-left:30%;
+    text-align: center;
+    background-color:white;
+}
+.Featured
+{
+    display: none;
+    
+}
+.ReasonEach:hover
+{
+   
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+.headingStory
+{
+    margin-top: 1.5rem;
+    color:white;
+    font-size: 30px;
+    letter-spacing: 4px;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.div3
+{
+    margin:1rem;
+    height:3px;
+    width:20rem;
+    background-color: #bfbd31;
+    margin-top: 2.5rem;
+}
+.Content
+{
+    color:white;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.image1,.image2,.image3,.image4
+{
+    border-radius: 8px;
+}
+.pic1,.pic2,.pic3,.pic4
+{
+    border-radius: 4px;
+}
+.Wondersec
+{
+    display: none;
+}
+.MidSec
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.header
+{
+    margin-top: 1rem;
+    font-size: 30px;
+    color: #bfbd31;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.introPlace
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.85rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: #bfbd31;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.pic
+{
+
+    border-radius: 6px;
+    
+}
+.MidSec
+{
+    padding-bottom: 4rem;
+    display: none;
+}
+.BlogSection
+{
+    background-color: black;
+    width:100%;
+
+}
+.details
+{
+   
+    display: flex;
+    background-color: #F66C0E;
+    padding:0.2rem;
+    width:90%;
+    height:7rem;
+    margin-left:5%;
+    justify-content: center;
+    align-items: center;
+}
+.one
+{
+    margin:2%;
+    width:22.5%;
+}
+.oneInput
+{
+    width:95%;
+    padding:6px;
+    border:#E7610A;
+    color:#E7610A;
+    background: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+}
+.SearchIcon
+{
+    padding-left:8%;
+    color:white;
+    font-size: 30px;
+}
+.SecondSection
+{
+    color:white;
+    margin-top: 4rem;
+}
+.Left
+{
+    padding:2rem;
+
+}
+.headingSecond
+{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+    letter-spacing: 3px;
+    padding-left: 0.5rem;
+}
+.btn
+{
+    background-color: #E7610A;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding:3px;
+    padding-left:8px;
+    padding-right: 8px;
+    margin-top: 1rem;
+    width:fit-content;
+
+}
+.para1
+{
+    color:#E7610A;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding:3rem;
+}
+.para2
+{
+    color:#E7610A;
+    font-size: 16px;
+    letter-spacing: 3px;
+    
+    padding-right: 3rem;
+    padding-left:3rem;
+}
+.ThirdSection
+{
+    margin-top: 4rem;
+    width:100%;
+    height:30rem;
+    background: url("worldback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4rem;
+}
+.count
+{
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color:#E7610A;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.context
+{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color:#E7610A;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.ThirdSection
+{
+    display: flex;
+    position: relative;
+}
+.i1
+{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.i2
+{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+
+}
+.i3
+{
+    position: absolute;
+    top: 60%;
+    left: 55%; 
+}
+.FourthSec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.headingBlog1
+{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color:white;
+    margin-top: 3rem;
+    padding:3rem;
+    padding-bottom: 0rem;
+}
+.brief
+{
+    color:#E7610A;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 0.25rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-left:2rem;
+    padding-right: 2rem;
+}
+.Blog
+{
+    display: flex;
+    flex-direction: row;
+    padding:4rem;
+
+}
+.leftSec
+{
+    display: flex;
+    flex-direction: column;
+    width:350%;
+    border:#707531 2px solid;
+    padding:2rem
+    
+}
+.blog
+{
+    margin-bottom: 1.65rem;
+    background-color: rgb(223,220,211,0.2);
+    padding:0.5rem;
+    border-radius: 4px;
+}
+.date
+{
+    
+    font-size: 12px;
+    color:#DFDCD3;
+    font-weight: bolder;
+    padding-top: 0.15rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.65rem;
+}
+.headingBlog
+{
+    color:#E7610A;
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.rightSec
+{
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 2rem;
+}
+.imgBlog
+{
+    width:80%;
+    height:20rem;
+    min-width:15rem;
+    margin-bottom: 1rem;
+}
+.picBlog
+{
+    width:100%;
+    height:100%;
+}
+.headingBlog2
+{
+    color:#E7610A;
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-left:0.5rem;
+}
+.line
+{
+    background-color:#707531;
+    width:70%;
+    margin-top: 0.25rem;
+    height: 2px;
+    margin-left:4px
+}
+.BlogText
+{
+    color:#DFDCD3;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    padding:0.5rem;
+    text-align: center;
+    
+}
+.readBtn
+{
+    background-color: #E7610A;
+    color:white;
+    padding:0.15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width:fit-content;
+    text-align: center;
+    margin-left: 20%;
+}
+.ContactSec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.headingContact
+{
+    color:white;
+    font-size: 55px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.Introduction
+{
+    color:#E7610A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-top: 0.15rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 12px;
+    text-align: center;
+}
+.FirstRow
+{
+    margin-top: 2rem;
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+}
+.FirstName
+{
+    padding:6px;
+    padding-left:16px;
+    padding-right: 16px;
+    margin-right: 0.45rem;
+   
+    color:#E7610A;
+    border:#E7610A  solid 3px;
+}
+.LastName
+{
+    
+    padding:6px;
+    padding-left:16px;
+    padding-right: 16px;
+    margin-left: 0.45rem;
+    color:#E7610A;
+    border:#E7610A  solid 3px;
+
+}
+.mobile,.email,.des
+{
+    padding:6px;
+    padding-left:122px;
+    padding-right: 122px;
+    margin-left: 0.45rem;
+    
+    color:#E7610A;
+    border:#E7610A  solid 3px;
+    margin-top: 0.25rem;
+}
+   
+.email,.des
+{
+    margin-top: 0.7rem;
+}
+.des
+{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.subBtn
+{
+    color: white;
+    background-color: #E7610A;
+    padding:4px;
+    padding-left:15px;
+    padding-right:15px ;
+    margin-top: 0.85rem;
+    margin-bottom: 4rem;
+}
+.BlogSection
+{
+    display: none;
+}
+.blog:hover
+{
+    cursor: pointer;
+    color:#E7F836;
+}
+.readBtn:hover
+{
+    background-color: #DEE3E5;
+    border:#E7610A solid 3px;
+    color:#E7610A;
+    cursor: pointer;
+}
+.BookingSection
+{
+    background-color: #130024;
+
+}
+.headTrend
+{
+    padding-top: 2rem;
+    text-align: center;
+    color:#4FE4FF;
+    font-size: 35px;
+    font-weight:bolder ;
+    font-family: 'Balsamiq Sans', cursive;
+    letter-spacing: 3px;
+    width:100%;
+    height:100%;
+}
+.ImageContainer
+{
+    margin-top: 2rem;
+    width:60%;
+    margin-left: 20%;
+    height:30%;
+    border-radius: 6px;
+    
+}
+.PictureContainer
+{
+    width:100%;
+    height:100%;
+}
+.Buttons
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.butn
+{
+    font-size: 30px;
+    color: #4FE4FF;
+    padding-right: 3rem;
+}
+.PlaceName
+{
+    color:#4FE4FF;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1rem;
+}
+.DetailsOfTour
+{
+
+    display: flex;
+    color:#4FE4FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding:1rem;
+    justify-content: center;
+}
+.Date,.TourLength,.To
+{
+    text-align: center;
+    padding-right: 1rem;
+}
+/*.BookingSection
+{
+    display: none;
+}*/
+.HeadingHotel
+{
+    color:#4FE4FF;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.SliderSec
+{
+    padding:2rem;
+    margin: 1rem;
+    border:#707531 2.5px solid;
+}
+hr.dashed 
+{
+   
+    border-top: 3px dashed #707531;
+    margin:6rem;
+
+}
+.introHotel
+{
+    color:#707531;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 19px;
+    text-align: center;
+}
+ .MainPanel
+ {
+     display: flex;
+     margin:2rem;
+ } 
+ .headList
+ {
+     color:#4FE4FF;
+     font-size: 18px;
+     font-weight: bolder;
+     letter-spacing: 2px;
+     font-family: 'Poppins', sans-serif;
+}
+.typeEach
+{
+    color:#DEE3E5;
+    font-size: 12px;
+    padding:0.25rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+.TypeList
+{
+    margin-top:0.7rem;
+}
+.headList2
+{
+    margin-top: 0.8rem;
+    color:#4FE4FF;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Ranger
+{
+    margin-top: 1rem;
+}
+.LocationHead
+{
+    margin-top: 1rem;
+    color:#4FE4FF;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control
+{
+    margin-top: 0.75rem;
+    padding:3px;
+  
+}
+.ImageHolder,.PicHolder
+{
+    border-radius: 8px;
+}
+.DetailsHolder
+{
+    background-color:rgb(79,228, 225,0.5);
+     width:100%;
+    height:30%;
+    position: absolute;
+    bottom:0rem;
+    color:#130024;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding:0.25rem;
+
+}
+.SingleItem
+{
+    position: relative;
+}
+.DetailsHolder
+{
+    display: none;
+}
+.SingleItem:hover
+{
+    cursor: pointer;
+}
+.typeEach:hover
+{
+    color:#4FE4FF;
+    cursor: pointer;
+}
+.BTN
+{
+    background-color:#4FE4FF ;
+    color:#130024;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding:4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top:1rem;
+    width:fit-content;
+    text-align: center;
+    
+}
+.SliderSec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FilterBtn
+{
+    background-color: #4FE4FF;
+    color:#130024;
+    padding: 4px;
+    padding-left: 10px;
+    margin-top: 1rem;
+    font-weight: bolder;
+    width:fit-content;
+    padding-right: 10px;
+}
+
+.headingx
+    {
+        margin-top: 100px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 45px;
+        padding: 3px;
+        color:#33ccff;
+    }
+.underline
+    {
+        width:150px;
+        height:6px;
+        background-color: #33ccff;
+        margin-top: 10px;
+    }
+.mainsec
+{
+    background-color:#130024;
+    border-radius: 4px;
+    border:#707531 solid 3px;
+    margin:2rem;
+    align-items: center;
+    margin-top: 80px;
+    width:500px;
+    height:80%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-width: 40%;
+}
+.imageHol
+    {
+        width:158px;
+        height: 158px;
+        border-radius: 50%;
+         background-color:#33ccff ;
+         margin-top: 30px;
+    }
+.picCon
+    {
+        width:150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        
+        
+    }
+    .name
+        {
+            letter-spacing: 2px;
+            font-weight:bolder;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    .post
+        {
+            font-size: 15px;
+            color: #33ccff;
+            margin-top: 7px;
+        }
+    .infox
+        {
+            color:#85adad;
+            padding:2px;
+            margin-top:10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    .button-container
+    {
+        display: flex;
+        margin-top: 8px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-right:10px;
+    }
+.prev-btn,.next-btn
+    {
+        
+        background-color: white;
+        border-color: transparent;
+        box-shadow: transparent;
+        color:#33ccff ;
+        margin-bottom: 8px;
+        size: 10px;
+     }
+     .prev-btn{
+        margin-right:30px;
+     }
+     .prev-btn,.next-btn:hover
+     {
+        
+         color:#05add7 ;
+         cursor: pointer;
+      } 
+      .btn
+      {
+          background-color: #130024;
+      }      
+
+.ReviewSec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CopyRightSec
+{
+    background-color:#33ccff;
+    color:#130024;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 0rem;
+    margin-top: 1rem;
+}
+  .coverPart
+  {
+      margin:0rem;
+  }
+  .BookingSection
+  {
+      display: none;
+  }
+  .PriorHeading
+  {
+      color:#F9212E;
+      font-family: 'Balsamiq Sans', cursive;
+      font-size: 40px;
+      margin-top: 2rem;
+      text-align: center;
+
+  }
+  .PriorIntro
+  {
+     color:#bfbd31;
+     font-size: 35px;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+
+  }
+ .CopyRightSec
+ {
+     margin-top: 10rem;
+ }
+ .Num
+ {
+     color:white;
+     opacity: 70%;
+     font-size: 200px;
+     font-family: 'Poppins', sans-serif;
+     position: absolute;
+     top:0rem;
+     left:0rem;
+     z-index: 8;
+     margin-top: 0rem;
+     padding-top: 0rem;
+ }
+ .Righting
+ {
+     position: relative;
+     padding:5px;
+ }
+ .Maining
+ {
+     margin:1%;
+     margin-top: 6rem;
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+ }
+ .coverPart,.PriorTour
+ {
+     background-color: #181919;
+ }
+.PriorTour
+{
+    
+    border:#bfbd31 solid 3px;
+    margin:2rem;
+}
+
+.mainPart
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headingy
+{
+    color:#D49619;
+    margin-top: 6rem;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Satisfy', cursive;
+    padding:3rem;
+}
+.card
+{
+    padding:3rem;
+    background-color:#F9212E;
+    color:#130024;
+    border-radius: 8px;
+    margin:1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding:2rem;
+    max-width: 60rem;
+    min-width: 40rem;
+    text-align: center;
+}
+.top
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+.sign
+{
+    color:#130024;
+    font-size: 15px;
+    position: absolute;
+    right:2rem;
+    border:4px solid #130024;
+    border-spacing: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 4px;
+    z-index: 1;
+    margin-left: 1rem;
+}
+.CloseSign
+{
+    display: none;
+    color:#130024;
+    font-size: 15px;
+    position: absolute;
+    right:2rem;
+    border:4px solid #130024;
+    border-spacing: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 4px;
+    z-index:5;
+    
+}
+
+.ques
+{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width:34rem;
+    padding-right: 1rem;
+    font-weight: bolder;
+   
+}
+.separator
+{
+    
+    height:3px;
+    background:#130024;
+    text-align: center;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-top:1.5rem;
+}
+.info
+{
+    letter-spacing: 2px;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color:#130024
+}
+.sign:hover,.CloseSign:hover
+{
+    cursor: pointer;
+    transform: rotate(90deg);
+    color:white;
+    font-size: 18px;
+    border-color: white;
+}
+
+.info,.separator
+{
+    display: none;
+}
+.subBtn
+{
+    background-color:#F9212E;
+    color:#130024;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.ReviewSec
+{
+    padding-bottom: 10rem;
+}
+.CopyRightSec
+{
+    margin-top: 0rem;
+    background-color: #000315;
+    color:#33ccff;
+    font-size: 10px;
+    padding:1rem;
+}
+.Result
+{
+    color:#33ccff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.Result
+{
+    display: none;
+}
+.priceVal
+{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    font-weight: bolder;
+
+}
+.BookingReceiptHotel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #280043;
+    color:white;
+    border:white solid 2px;
+    margin:2rem;
+}
+.headrec
+{
+    margin-top: 4rem;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding:4rem;
+    text-align: center;
+
+}
+.imgCon
+{
+    width:60%;
+    margin-left: 20%;
+    min-height:20rem;
+    max-height: 40rem;
+    margin-top: 3rem;
+    
+}
+.picCon2
+{
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.nameHotel,.CashPaid,.hostelAddress
+{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.BookingReceiptHotel
+{
+    display: none;
+}
+.subButton:hover
+{
+    color:white;
+    cursor: pointer;
+}
+.butn:hover
+{
+    color:white;
+    cursor: pointer;
+}
